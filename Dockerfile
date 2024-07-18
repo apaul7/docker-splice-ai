@@ -1,8 +1,8 @@
-FROM tensorflow/tensorflow:2.2.0-gpu
-MAINTAINER Alexander Paul <alex.paul@.wustl.edu>
+FROM tensorflow/tensorflow:2.17.0-gpu
 
 LABEL \
-  description="Illumina SpliceAI image for use in Workflows"
+  description="Illumina SpliceAI image for use in Workflows" \
+  maintainer="Alexander Paul<alex.paul@wustl.edu>"
 
 RUN apt-get update && apt-get install -y \
   build-essential \
